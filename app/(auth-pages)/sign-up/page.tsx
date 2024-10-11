@@ -4,7 +4,7 @@ import { SubmitButton } from '@/components/submit-button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
-export default function Login({ searchParams }: { searchParams: Message }) {
+export default function SignUp({ searchParams }: { searchParams: Message }) {
   return (
     <div>
       <form className='flex min-w-64 flex-col gap-8'>
