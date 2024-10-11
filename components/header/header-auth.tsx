@@ -11,12 +11,13 @@ import {
 
 import { Button } from '../ui/button';
 import { User } from '@supabase/supabase-js';
+import { MenuIcon } from 'lucide-react';
 
 export default async function AuthButton({ user }: { user: User }) {
   return user ? (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        <p className='text-sm'>{user.email}</p>
+      <DropdownMenuTrigger className='flex items-center gap-2 rounded-md border px-2 py-1'>
+        <p className='text-xs'>{user.email}</p> <MenuIcon className='h-5 w-5' />
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuLabel>Your account</DropdownMenuLabel>
